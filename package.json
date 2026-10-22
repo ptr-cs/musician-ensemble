@@ -1,0 +1,22 @@
+{
+  "name": "musician-ensemble",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Virtual AI musicians performing Mozart's Clarinet Quintet KV 581 in real time",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "midi": "python3 tools/ly2midi.py"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.35",
+    "tone": "^15.1.22"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
